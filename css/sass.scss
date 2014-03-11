@@ -1,0 +1,21 @@
+//sass input.scss output.css
+//sass --watch input.scss:output.css
+//If you have a directory with many Sass files, you can also tell Sass to watch the entire directory:
+//sass --watch app/sass:public/stylesheets
+
+
+// bourbon install
+// per scaricare la cartella necessaria a barboun
+@import 'bourbon/bourbon';
+
+
+$variable: #333;
+
+
+html {
+    color: $variable;
+    border-radius: 5px;
+    transition: all .5s ease;
+    width: (100px/50px);
+    @include transition(all 0.8s);
+}

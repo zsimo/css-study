@@ -1,0 +1,186 @@
+
+/*
+html {
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+}
+*/
+/*    font: 20px Lucida Grande, Geneva, Verdana, Arial;*/
+
+/*override bootstrap*/
+body {
+    font-size: 20px;
+/*    overflow: hidden;*/
+/*    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;*/
+}
+#experimentsLink {
+    display: inline-block;
+    margin-left: 20px;
+}
+#experimentsLink:hover {
+    cursor: pointer;
+}
+
+#links {
+    position: absolute;
+    right: 6%;
+    top: 6%;
+    display: inline-block;
+    font-size: 22px;
+}
+a:hover {
+    cursor: pointer;
+}
+
+.common-03 {   
+    height: auto;
+    width: 180px;
+    -webkit-transition: all 500ms ease;
+/*    color: white;*/
+    font-size: 36px;
+}
+.container-03 {
+  -webkit-perspective: 500px;
+  background-color: white;
+  border: 1px solid black;
+}
+.inner-el-03 {
+/*    background-color: rgb(211, 0, 19);*/
+}
+.inner-el-03:hover {
+    -webkit-transform-origin: right;
+    -webkit-transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+/*
+.active-03 {
+    transform-origin: right;
+    transform: rotateY(100deg);
+}
+*/
+            
+    
+
+
+
+.editableDiv {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/*override bootstrap*/
+.lead {
+    font-size: 30px;
+}
+
+#duePunti {
+/*
+    font-size: 46px;
+    margin-top: 4%;
+    margin-right: -40px;
+*/
+}
+
+#cssRules {
+/*    overflow-y: scroll;*/
+    font-size: 12px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+#autocompleteProperties {
+/*                border: 1px solid grey;*/
+/*
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+*/
+/*    height: auto;*/
+/*    width: auto;*/
+    
+/*    transition: transform 500ms ease;*/
+
+    
+/*    text-align: center;*/
+/*    position: absolute;*/
+    
+    
+}
+
+.singleProperty {
+/*    margin: 2px;*/
+/*    font: 26px Lucida Grande, Geneva, Verdana, Arial;*/
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, .75);
+/*                border-radius: 5px; */
+
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    -ms-transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+}
+.singleProperty:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+.hover {
+    opacity: .8;
+    background-color: red;
+}
+
+#targetContainer {
+    position: absolute;
+    background-image: url("../img/transparentBackground.png");
+    height: 55%;
+    width: 73%;
+/*    padding: 20px;*/
+    bottom: 10px;
+    left: 15px;
+    right: 0;
+    z-index: -1;
+    box-shadow: 1px 10px 45px -2px rgba(0,0,0,0.50);
+/*    margin: 30px;*/
+/*
+    margin-left: 15px;
+    margin-bottom: 10px;
+*/
+    border-radius: 3px; 
+    border: 1px solid grey;
+
+    
+}
+#target {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    top: auto;
+    left: auto;
+    right: 40%;
+    bottom: 40%;
+/*    transition: all 500ms ease;*/
+}
+
+pre {
+    width: 200px;
+    height: 100px;
+}
+.edit-css {
+    display:block;
+    background:#ddd;
+    border:1px solid #777;
+    font-family:monospace;
+    height:15em;
+    resize:both;
+    overflow:auto;
+}
+
+/*
+.hide {
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+*/

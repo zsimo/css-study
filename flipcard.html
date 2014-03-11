@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+		<meta content="css" name="title">
+		<meta name="author" content="Simone Sacchi">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>flip card</title>
+
+<!--        <link rel="stylesheet" href="css/lib/prism.css" />-->
+
+        <link rel="shortcut icon" href="">
+
+        <style type="text/css">
+            
+            body {
+                padding: 20px;
+            }
+            
+            #button {
+                height: 100px;
+                width: 100px;
+                margin: 50px;
+            }
+            .container {
+                display: inline-block;
+                margin: 20px;
+            }
+            
+            
+            /******************************
+            *  FLIP 01
+            *******************************/
+            .flip01 {   
+                height: 150px;
+                width: 150px;
+                transition: all 500ms ease;
+                color: white;
+                font-size: 36px;
+            }
+            .container01 {
+              perspective: 500px;
+              border: 1px solid black;
+            }
+            .card01 {
+                background-color: red;
+            }
+            .transform01 {
+            /*transform-origin: top left;*/
+                transform: rotateY(180deg);
+            }
+            /******************************
+            *  FLIP 02
+            *******************************/
+            .flip02 {
+                height: 150px;
+                width: 150px;
+                transition: all 500ms ease;
+                color: white;
+                font-size: 36px;
+            }
+            .container02 {
+              perspective: 500px;
+              border: 1px solid black;
+            }
+            .card02 {
+                background-color: red;
+            }
+            .transform02 {
+/*                transform-origin: top right;*/
+                transform-origin: right;
+                transform: rotateY(180deg);
+            }
+            /******************************
+            *  FLIP 03
+            *******************************/
+            .flip03 {
+              height: 150px;
+              width: 150px;
+              transition: all 500ms ease;
+            }
+            .container03 {
+              perspective: 500px;
+              border: 1px solid black;
+            }
+            .transformed03 {
+/*                perspective: 500px;*/
+              /*transform: rotateY(50deg);*/
+                transform-style: preserve-3d;
+              background-color: blue;
+            }
+            .child03 {
+              transform-origin: top left;
+
+              /*transform: rotateX(40deg);*/
+              background-color: lime;
+            }
+            .transformed03:hover {
+            /*blue*/
+              transform: rotateY(50deg);
+            }
+            .child03:hover {
+            /*lime*/
+            /*rotateX come accorciare (se non dai perspective anche al container trasformed03)*/
+              transform: rotateX(180deg);
+            }
+            
+        </style>
+        
+    </head>
+    
+    
+<body>
+        
+        
+    <div class="container">
+    <div class="flip01 container01">
+        <div class="flip01 card01" id="card01">FLIP 01 - BASE</div>
+    </div>
+    </div>
+    
+    <div class="container">
+    <div class="flip02 container02">
+        <div class="flip02 card02" id="card02">FLIP 02 - OPEN</div>
+    </div>
+    </div>
+    
+    <div class="container">
+    <div class="flip03 container03">
+      <div class="flip03 transformed03">
+          <div class="flip03 child03">FLIP 03 - HOVER</div>
+      </div>
+    </div>
+    </div>
+
+    
+    
+    <br>
+    <button id="button">TOGGLE</button>
+        
+
+
+<script type="text/javascript">
+
+    document.getElementById("button").onclick = function (event) {
+        document.getElementById("card01").classList.toggle("transform01");
+        document.getElementById("card02").classList.toggle("transform02");
+    };
+    
+
+</script>
+ 
+<!--    <script src="js/lib/prism.js"></script>-->
+    <script src="js/lib/prefixfree.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

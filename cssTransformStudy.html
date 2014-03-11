@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+		<meta content="css" name="title">
+		<meta name="author" content="Simone Sacchi">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>css transforms study</title>
+        <link rel="shortcut icon" href="">
+        
+<!--        <link rel="stylesheet" href="css/lib/prism.css" />-->
+        
+        <script src="codemirror-3.22/lib/codemirror.js"></script>    
+        <script src="codemirror-3.22/mode/css/css.js"></script>
+        
+        <link rel="stylesheet" href="codemirror-3.22/lib/codemirror.css" />
+        <link rel="stylesheet" href="codemirror-3.22/theme/blackboard.css" />
+
+        
+        <link rel="stylesheet" href="css/cssTransformStudy.css" />
+        
+    </head>
+    
+    
+<body>
+    
+    
+    <header>
+        <span class="title">CSS </span>
+        <span class="title redTitle">transformation</span> 
+    </header>
+        
+
+<!--ROW 01    -->
+<div class="row">    
+    <!-- ***************************************    
+    el-01
+    ****************************************  -->
+    <div class="column-1-2">
+        <div class="inner-column-1-2">
+            <div class="common-01 container-01">
+                <div class="common-01 inner-el-01" id="inner-el-01">FLIP 01 - BASE</div>
+            </div>
+            
+<!--
+<xmp id="xmp-01">
+<div class="common-01 container-01">
+    <div class="common-01 inner-el-01">FLIP 01 - BASE</div>
+</div>
+</xmp>
+-->
+        </div>
+        
+        <div class="inner-column-1-2"> 
+            <div class="button" id="button-01">toggle</div>
+        </div>
+        
+        <div class="row-row">
+            <textarea id="text-area-01">
+.common-01 {   
+    height: 150px;
+    width: 150px;
+    transition: all 500ms ease;
+    color: white;
+    font-size: 36px;
+}
+.container-01 {
+  perspective: 500px;
+  border: 1px solid black;
+}
+.inner-el-01 {
+    background-color: rgb(211, 0, 19);
+}
+.active-01 {
+/*transform-origin: top left;*/
+    transform: rotateY(180deg);
+}
+            
+            </textarea>
+                
+            
+        </div>
+        
+        
+<!--
+    <div class="row-row-button"> 
+        <div class="button" id="button-01">toggle</div>
+    </div>
+-->
+        
+    </div>
+    
+    
+<!--
+    </td>    
+    <td>   
+-->
+    
+<!--
+    <div class="column-2-10">
+        <div class="button" id="button-01">toggle</div>
+    </div>    
+-->
+    
+    <!-- ***************************************    
+        el-02
+        ****************************************  -->
+    <div class="column-1-2">
+        <div class="inner-column-1-2">
+            <div class="common-02 container-02">
+                <div class="common-02 inner-el-02" id="inner-el-02">FLIP 02 - BASE</div>
+            </div>
+        </div>
+        
+        <div class="inner-column-1-2"> 
+            <div class="button" id="button-02">toggle</div>
+        </div>
+        
+        <div class="row-row">
+            <textarea id="text-area-02">
+.common-02 {   
+    height: 150px;
+    width: 150px;
+    transition: all 500ms ease;
+    color: white;
+    font-size: 36px;
+}
+.container-02 {
+  perspective: 500px;
+  border: 1px solid black;
+}
+.inner-el-02 {
+    background-color: rgb(211, 0, 19);
+}
+.active-02 {
+/*transform-origin: top left;*/
+    transform: rotateX(180deg);
+}
+            
+            </textarea>
+                
+<!--            <div class="button" id="button-02">toggle</div>-->
+        </div>
+        
+        
+<!--
+    <div class="row-row-button"> 
+        <div class="button" id="button-02">toggle</div>
+    </div>
+-->
+        
+    </div>
+    
+    
+    
+</div>
+<!--end ROW 01   -->
+
+    
+    
+    
+    
+    
+
+<!--ROW 02    -->
+<div class="row">    
+    <!-- ***************************************    
+    el-03
+    ****************************************  -->
+    <div class="column-1-2">
+        <div class="inner-column-1-2">
+            <div class="common-03 container-03">
+                <div class="common-03 inner-el-03" id="inner-el-03">FLIP DOOR 03 - BASE</div>
+            </div>
+        </div>
+        
+        <div class="inner-column-1-2"> 
+            <div class="button" id="button-03">toggle</div>
+        </div> 
+        
+        <div class="row-row">
+            <textarea id="text-area-03">
+.common-03 {   
+    height: 150px;
+    width: 150px;
+    transition: all 500ms ease;
+    color: white;
+    font-size: 36px;
+}
+.container-03 {
+  perspective: 500px;
+  background-color: white;
+  border: 1px solid black;
+}
+.inner-el-03 {
+    background-color: rgb(211, 0, 19);
+}
+.active-03 {
+    transform-origin: right;
+    transform: rotateY(100deg);
+}
+            
+            </textarea>
+                
+            
+        </div>
+        
+<!--
+    <div class="row-row-button"> 
+        <div class="button" id="button-03">toggle</div>
+    </div>    
+-->
+        
+    </div>
+
+    
+    
+<!--
+    <div class="column-2-10">
+        <div class="button" id="button-02">toggle</div>
+    </div>    
+-->
+    
+    <!-- ***************************************    
+        el-04
+        ****************************************  -->
+    <div class="column-1-2">
+        <div class="inner-column-1-2">
+            <div class="common-04 container-04">
+                <div class="common-04 inner-el-04" id="inner-el-04">FLIP DOOR 04</div>
+            </div>
+        </div>
+        
+        <div class="inner-column-1-2"> 
+            <div class="button" id="button-04">toggle</div>
+        </div>
+        
+        <div class="row-row">
+            <textarea id="text-area-04">
+.common-04 {   
+    height: 150px;
+    width: 150px;
+    transition: all 500ms ease;
+    color: white;
+    font-size: 36px;
+}
+.container-04 {
+  perspective: 500px;
+  background-color: white;
+  border: 1px solid black;
+}
+.inner-el-04 {
+    background-color: rgb(211, 0, 19);
+}
+.active-04 {
+  transform-origin: top;
+  transform: rotateX(180deg);
+}
+            
+            </textarea>
+
+        </div>
+        
+<!--
+    <div class="row-row-button"> 
+        <div class="button" id="button-04">toggle</div>
+    </div>
+-->
+        
+    </div>
+    
+    
+    
+</div>
+<!--end ROW 02   -->
+    
+    
+    
+<!--ROW 03    -->
+<div class="row">    
+    <!-- ***************************************    
+    el-05
+    ****************************************  -->
+    <div class="column-1-2">
+        <div class="inner-column-1-2">
+            <div class="common-05 container-05">
+                <div class="common-05 inner-el-05" id="inner-el-05">
+                    <div class="common-05 inner-inner-el-05" id="inner-inner-el-05">Study 05 - open top</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="inner-column-1-2"> 
+            <div class="button" id="button-05">toggle</div>
+        </div>    
+        
+        <div class="row-row">
+<textarea id="text-area-05">
+.common-05 {
+  height: 150px;
+  width: 150px;
+  transition: all 500ms ease;
+  font-size: 36px;
+  color: white;
+}
+.container-05 {
+  perspective: 500px;
+  border: 1px solid black;
+}
+.inner-el-05 {
+  transform-style: preserve-3d;
+  background-color: rgb(26, 90, 188);
+}
+.inner-inner-el-05 {
+  transform-origin: top left;
+  background-color: rgb(211, 0, 19);
+}
+.active-05 {
+  transform: rotateY(50deg);
+}
+.active-inner-05 {
+  transform: rotateX(180deg);
+}
+</textarea>
+        
+        </div>
+        
+<!--
+    <div class="row-row-button"> 
+        <div class="button" id="button-05">toggle</div>
+    </div>    
+-->
+        
+    </div>
+
+    
+    <!-- ***************************************    
+    el-06
+    ****************************************  -->
+    <div class="column-1-2">
+        <div class="inner-column-1-2">
+            <div class="common-06 container-06">
+                <div class="common-06 inner-el-06" id="inner-el-06">
+                    <div class="common-06 inner-inner-el-06" id="inner-inner-el-06">Study 06 - open book</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="inner-column-1-2"> 
+            <div class="button" id="button-06">toggle</div>
+        </div>    
+        
+        <div class="row-row">
+<textarea id="text-area-06">
+.common-06 {
+  height: 150px;
+  width: 150px;
+  transition: all 500ms ease;
+  font-size: 36px;
+  color: white;
+}
+.container-06 {
+  perspective: 500px;
+  border: 1px solid black;
+}
+.inner-el-06 {
+  transform-style: preserve-3d;
+  background-color: white;
+}
+.inner-inner-el-06 {
+  transform-origin: left;
+  background-color: rgb(211, 0, 19);
+}
+.active-06 {
+  transform: rotateY(0deg);
+}
+.active-inner-06 {
+  transform: rotateY(-180deg);
+}
+</textarea>
+                 
+        </div>
+        
+<!--
+    <div class="row-row-button"> 
+        <div class="button" id="button-06">toggle</div>
+    </div>    
+-->
+        
+    </div>
+    
+    
+    
+</div>
+<!--end ROW 03   -->
+
+    
+
+<br><br><br><br><br><br>
+    
+    
+    
+<!-- _______________________________________________________________________________
+
+	 START CSS STUDY TEMPLATE
+	 _______________________________________________________________________________
+-->
+<script id="css-study-template" type="text/x-handlebars-template">
+    
+    <div class="column-1-2">
+        <div class="row-row">
+            {{html}}
+            
+<xmp id="xmp-{{id}">
+{{html}}
+</xmp>  
+        </div>
+        
+        <div class="row-row">
+            <textarea id="text-area-{{id}}">
+.common-01 {   
+    height: 150px;
+    width: 150px;
+    transition: all 500ms ease;
+    color: white;
+    font-size: 36px;
+}
+.container-01 {
+  perspective: 500px;
+  border: 1px solid black;
+}
+.inner-el-01 {
+    background-color: rgb(211, 0, 19);
+}
+.active-01 {
+/*transform-origin: top left;*/
+    transform: rotateY(180deg);
+}
+            
+            </textarea>
+                
+            
+        </div>
+        
+        
+    <div class="row-row-button"> 
+        <div class="button" id="button-01">toggle</div>
+    </div>
+        
+    </div>    
+
+</script>    
+<!-- _______________________________________________________________________________
+
+	 END CSS STUDY TEMPLATE
+	 _______________________________________________________________________________
+-->
+    
+    
+
+<style type="text/css" id="style-sheet-01"></style>
+<style type="text/css" id="style-sheet-02"></style>
+<style type="text/css" id="style-sheet-03"></style>
+<style type="text/css" id="style-sheet-04"></style>     
+<style type="text/css" id="style-sheet-05"></style> 
+<style type="text/css" id="style-sheet-06"></style>
+<style type="text/css" id="style-sheet-07"></style> 
+    
+    
+<script src="codemirror-3.22/addon/comment/comment.js"></script>
+<script src="js/lib/CSSOM.js"></script>
+<!--<script src="js/lib/prism.js"></script>-->
+<script src="cssData.json"></script>
+<script src="cssTransformStudy.json"></script>
+<script src="../fastreading/js/app/ZTooltip.js"></script>  
+<script src="js/cssTransformStudy.js"></script>
+<script src="js/lib/prefixfree.min.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

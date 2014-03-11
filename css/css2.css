@@ -1,0 +1,186 @@
+.CodeMirror {
+    height: 100%;   
+    font-family: Helvetica neue;
+}
+
+.cm-s-blackboard.CodeMirror {
+    background: white;   
+    color: black;
+}
+.cm-s-blackboard .cm-meta {
+    color: #707070;
+}
+
+.cm-s-blackboard .cm-number {
+    color: #3bb51e;
+}
+.cm-s-blackboard .cm-variable {
+    color: blue;
+}
+.cm-s-blackboard .cm-atom {
+    color: #d91414;
+}
+.cm-s-blackboard .cm-keyword {
+    color: #f59e13;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+.container {
+    width: 100%;
+    height: 100%;
+/*                background-color: red;*/
+}
+.firstRow {
+    width: 100%;
+    height: 88%;
+
+}
+.leftColumn {
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+.rightColumn {
+    float: right;
+    width: 40%;
+    height: 100%;
+/*                background: red;*/
+}
+.rowRightColumn {
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-left: 2px solid black;
+}
+.buttonArea {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20%;
+    height: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.secondRow {
+    width: 100%;
+    height: 12%;
+}
+
+.downHeader {
+    font-family: Helvetica neue;
+}
+    .title {
+        padding-left: 10px;
+        margin-left: 20px;
+        font-size: 66px;
+        font-weight: bold;
+        border-top: 2px solid black;
+    }
+    .cssSubTitle {
+        padding-right: 10px;
+        margin-left: 10px;
+        font-size: 40px;
+        font-weight: normal;
+        color: #606060;
+    }
+
+.targetContainer {
+    height: 100%;
+    width: 100%;
+/*                background-image: url("img/transparentBackground.png");*/
+/*                border: 1px solid black;*/
+/*                background-color: black;*/
+    z-index: -1;
+/*                margin-top: 10px;*/
+    border-radius: 2px;
+}
+
+
+#target:before {
+    color: red;
+}
+.defaultStyle:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+    .edit-css {
+/*                    border-left: 2px solid black;*/
+        padding-left: 15px;
+/*        display:block;*/
+        font-family: Helvetica neue;
+/*                background:#ddd;*/
+/*                border: 1px solid #777;*/
+/*                font-family:monospace;*/
+/*                height: 15em;*/
+/*                resize: both;*/
+/*                overflow: auto;*/
+    }
+
+.button {
+    display: inline-block;
+    text-align: center;
+    font-family: Helvetica neue;
+    font-weight: bold;
+    width: 120px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    z-index: 999;
+    margin-left: 20px;
+    margin-right: 20px;
+/*    border-radius: 2px;*/
+/*    margin-left: 35%;*/
+}
+    .button:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        
+        cursor: pointer;
+    }
+    .button:active {
+        color: white;
+        background-color: red;
+        border: 2px solid black;
+    }
+.classLabel {
+    width: 100%;
+/*    text-align: center;*/
+    font-family: Helvetica neue;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#defaultTextArea {
+    height: 100%;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+html {
+  color: #333333;
+  border-radius: 5px;
+  transition: all .5s ease;
+  width: 2;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+/*  transition: all 0.8s; */
+}
