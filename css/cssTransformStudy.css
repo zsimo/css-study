@@ -1,9 +1,9 @@
 .CodeMirror {
-    height: 100%;   
+    height: 100%;
 /*    font-family: Helvetica neue;*/
 }
 .cm-s-blackboard.CodeMirror {
-    background: white;   
+    background: white;
     color: black;
 }
 .cm-s-blackboard.CodeMirror:hover {
