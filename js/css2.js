@@ -158,6 +158,7 @@
                     if (xhr.status === 200) {
 
 //                         console.log(xhr.responseText);
+                        console.log();
 
                         // jsonResponse = JSON.parse(xhr.responseText);
 //                        console.log(jsonResponse.test);
